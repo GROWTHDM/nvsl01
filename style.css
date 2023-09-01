@@ -1,0 +1,103 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    text-decoration: none;
+}
+
+img{ max-width: 100%; }
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    background: url("imagens/fundoam.png");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.section-video{
+    width: 1120px;
+    max-width: 100%;
+    margin: 30rem auto 20rem auto;
+}
+
+
+.box-button{
+    margin: 6rem 0;
+    text-align: center;
+    visibility: hidden;
+}
+
+.classlogo{
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(8, 58, 29);
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    border: 2px solid rgb(162 187 173);
+    box-shadow: 0 0 10px rgb(86 89 86);
+}
+
+.box-button a{
+    background-color: #3D5BB7;
+    border-radius: 13px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    transition: 0.5s;
+    
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+
+}
+
+.box-button a:hover{
+    background-color: #2e50b4;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+@media (max-width: 575.98px) {
+
+    body{
+        background: url('imagens/fundoam.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .section-video{
+        width: 90%;
+        margin: 15rem auto;
+    }
+
+    .box-button a{
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        transition: 0.5s;
+    }
+
+}
